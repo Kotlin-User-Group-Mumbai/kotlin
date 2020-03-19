@@ -99,7 +99,7 @@ abstract class AbstractScratchRunActionTest : FileEditorManagerTestCase() {
             )
         }
 
-        val outputDir = createTempDir(dirName)
+        val outputDir = FileUtil.createTempDirectory(dirName, "")
 
         if (javaFiles.isNotEmpty()) {
             val options = listOf("-d", outputDir.path)
