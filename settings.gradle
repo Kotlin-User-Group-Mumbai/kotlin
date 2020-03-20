@@ -315,6 +315,7 @@ if (buildProperties.includeCidrPlugins) {
     logger.info("NOT including CIDR modules in settings.gradle")
 }
 
+
 if (buildProperties.includeUltimate) {
     include ":kotlin-ultimate:ultimate",
             ":kotlin-ultimate:ultimate:ultimate-runner",
